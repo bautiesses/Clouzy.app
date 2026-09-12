@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#eef3ff;font-family:Nunito,system-ui;color:#0e2748;-webkit-font-smoothing:antialiased}
+a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
+</style>
+</helmet>
+
+<div style="position:relative;overflow:hidden;min-height:100vh">
+
+  <div style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:22px 5vw;background:linear-gradient(180deg,rgba(238,243,255,.92),rgba(238,243,255,0));backdrop-filter:blur(6px)">
+    <a href="index.html" style="font:900 26px/1 Nunito,system-ui;letter-spacing:.01em;color:#1a7bff">clouzy</a>
+    <a href="index.html" style="font:800 14px/1 Nunito,system-ui;color:#3d5c85" style-hover="color:#1a7bff">← Back to site</a>
+  </div>
+
+  <div style="position:absolute;right:-12%;top:-8%;width:44vw;height:44vw;border-radius:50%;background:rgba(255,255,255,.7)"></div>
+  <div style="position:absolute;left:-10%;top:30%;width:36vw;height:36vw;border-radius:50%;background:rgba(26,123,255,.06)"></div>
+
+  <main style="position:relative;max-width:760px;margin:0 auto;padding:150px 5vw 120px">
+    <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Legal</div>
+    <h1 style="margin:16px 0 0;font:900 clamp(40px,5vw,64px)/1.02 Nunito,system-ui;letter-spacing:-.035em;color:#0e2748">Terms of Use</h1>
+    <div style="margin-top:14px;font:700 15px/1 Nunito,system-ui;color:#7f93b5">Last updated: September 2026</div>
+
+    <p style="margin:34px 0 0;font:700 18px/1.6 Nunito,system-ui;color:#3d5c85">These terms are the agreement between you and Clouzy (“we”, “our”, “the app”) for using the Clouzy iOS app. By downloading or using Clouzy you agree to them. They are short on purpose; if anything is unclear, write to us.</p>
+
+    <div style="margin-top:44px;display:flex;flex-direction:column;gap:18px">
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">1.</span> What Clouzy Is</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">Clouzy shows you the weather where the people you connect with are, and lets you send each other friendly reminders (umbrella, coat, water). It is a companion, not a safety or emergency service. Weather data comes from Apple WeatherKit and can be delayed or inaccurate; always check an official source before making decisions that depend on the weather.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">2.</span> Your Account</h2>
+        <ul style="margin:16px 0 0;padding:0 0 0 22px;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85;display:flex;flex-direction:column;gap:8px">
+          <li>You sign in with Apple. You are responsible for keeping your Apple account secure.</li>
+          <li>You must be at least 13 years old to use Clouzy.</li>
+          <li>One account per person. Don’t impersonate anyone or use a name that misleads your friends.</li>
+          <li>You can delete your account at any time from the Profile tab. This removes your data as described in our <a href="privacy.html">Privacy Policy</a>.</li>
+        </ul>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">3.</span> Connecting With People</h2>
+        <ul style="margin:16px 0 0;padding:0 0 0 22px;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85;display:flex;flex-direction:column;gap:8px">
+          <li>Connections are mutual. Sharing your code, or accepting someone’s, means you both agree to see each other’s name, city, weather and reminders.</li>
+          <li>Only share your code with people you know and trust.</li>
+          <li>You can remove a connection at any time, and they stop seeing you immediately.</li>
+        </ul>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">4.</span> Acceptable Use</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">Clouzy exists to look after people. Please don’t use it to:</p>
+        <ul style="margin:12px 0 0;padding:0 0 0 22px;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85;display:flex;flex-direction:column;gap:8px">
+          <li>Harass, spam or repeatedly send reminders to someone who has asked you to stop.</li>
+          <li>Track or monitor someone without their knowledge or consent.</li>
+          <li>Access the service through automated means, reverse-engineer it, or interfere with its operation.</li>
+          <li>Break any applicable law.</li>
+        </ul>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">We may suspend or close accounts that break these rules.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">5.</span> Notifications and Location</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">Reminders arrive as push notifications, and your city is derived from your device location. Both depend on permissions you grant in iOS, and you can revoke them anytime in Settings. Without them, parts of Clouzy won’t work as intended.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">6.</span> Price</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">Clouzy is currently free. If we ever introduce paid features, we will say so clearly in the app before you are charged, and any purchase will go through Apple’s App Store under its terms.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">7.</span> Our Content and Yours</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">The Clouzy name, mascot, design and code belong to us. You keep ownership of anything you enter (like your display name) and give us permission to use it only to run the service for you and your connections.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">8.</span> Availability and Liability</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">We work hard to keep Clouzy running, but it is provided “as is”. We can’t promise it will always be available or that weather data will always be right. To the extent the law allows, we are not liable for losses that come from relying on the app, from someone getting wet, or from service interruptions. Nothing here limits rights you have as a consumer under your local law.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">9.</span> Ending Things</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">You can stop using Clouzy and delete your account whenever you like. We may suspend or end access if you break these terms, or discontinue the service with reasonable notice inside the app.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">10.</span> Changes to These Terms</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">If we change these terms, we update the date at the top and let you know inside the app before the change takes effect. Continuing to use Clouzy after that means you accept the new terms.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">11.</span> Governing Law</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">These terms are governed by the laws of Argentina, without affecting any mandatory consumer protections that apply where you live.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07);display:flex;align-items:center;gap:22px;flex-wrap:wrap">
+        <img src="assets/mascot.png" alt="" style="width:72px;display:block">
+        <div style="flex:1;min-width:200px">
+          <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">12.</span> Contact</h2>
+          <p style="margin:8px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">Questions about these terms? Write to <a href="mailto:bauti@clouzy.app">bauti@clouzy.app</a>. We reply within a few days.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;max-width:1240px;margin:0 auto;padding:26px 5vw 40px;border-top:1px solid rgba(14,39,72,.1);font:700 13px/1 Nunito,system-ui;color:#7f93b5">
+    <span style="font:900 20px/1 Nunito,system-ui;color:#1a7bff">clouzy</span>
+    <div style="display:flex;gap:26px">
+      <a href="privacy.html" style="color:#3d5c85" style-hover="color:#1a7bff">Privacy</a>
+      <a href="terms.html" style="color:#3d5c85" style-hover="color:#1a7bff">Terms</a>
+      <a href="mailto:bauti@clouzy.app" style="color:#3d5c85" style-hover="color:#1a7bff">Support</a>
+    </div>
+    <span>© 2026 Clouzy</span>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}"></script>
+</body>
+</html>

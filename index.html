@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#eef3ff;font-family:Nunito,system-ui;color:#0e2748;-webkit-font-smoothing:antialiased}
+a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
+@keyframes cz-float{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-18px) rotate(1.5deg)}}
+@keyframes cz-drift{0%{transform:translateX(0)}100%{transform:translateX(60px)}}
+@keyframes cz-drop{0%{transform:translateY(-4px);opacity:0}15%{opacity:.9}75%{opacity:.4}100%{transform:translateY(120px);opacity:0}}
+@keyframes cz-in{0%{opacity:0;transform:translateY(28px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes cz-pop{0%{opacity:0;transform:scale(.92) translateY(30px)}100%{opacity:1;transform:scale(1) translateY(0)}}
+</style>
+</helmet>
+
+<div style="position:relative;overflow:hidden">
+
+  <div style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:22px 5vw;background:linear-gradient(180deg,rgba(238,243,255,.92),rgba(238,243,255,0));backdrop-filter:blur(6px)">
+    <a href="#top" style="font:900 26px/1 Nunito,system-ui;letter-spacing:.01em;color:#1a7bff">clouzy</a>
+    <div style="display:flex;align-items:center;gap:30px;font:800 14px/1 Nunito,system-ui">
+      <a href="#how" style="color:#3d5c85" style-hover="color:#1a7bff">How it works</a>
+      <a href="#remind" style="color:#3d5c85" style-hover="color:#1a7bff">Reminders</a>
+      <a href="#widgets" style="color:#3d5c85" style-hover="color:#1a7bff">Widgets</a>
+      <a href="#download" style="display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:999px;background:#0e2748;color:#fff" style-hover="background:#1a7bff;color:#fff">
+        <svg width="12" height="14" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#fff"></path></svg>
+        Get the app
+      </a>
+    </div>
+  </div>
+
+  <section id="top" style="position:relative;min-height:100vh;overflow:hidden;background:linear-gradient(180deg,#bfe0fb 0%,#8ec3f2 38%,#4f95dd 78%,#2f6fbe 100%)">
+    <div data-depth="0.12" style="position:absolute;left:-10%;top:8%;width:52vw;height:52vw;border-radius:50%;background:rgba(255,255,255,.28);filter:blur(2px)"></div>
+    <div data-depth="0.22" style="position:absolute;right:-14%;top:-6%;width:46vw;height:46vw;border-radius:50%;background:rgba(255,255,255,.22)"></div>
+    <div data-depth="0.35" style="position:absolute;left:8%;top:62%;width:26vw;height:12vw"><div style="width:100%;height:100%;border-radius:999px;background:rgba(255,255,255,.35);animation:cz-drift 14s ease-in-out infinite alternate"></div></div>
+    <div data-depth="0.28" style="position:absolute;right:6%;top:72%;width:34vw;height:14vw"><div style="width:100%;height:100%;border-radius:999px;background:rgba(255,255,255,.26);animation:cz-drift 18s ease-in-out infinite alternate-reverse"></div></div>
+
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:150px 5vw 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center">
+      <div style="animation:cz-in .9s .1s ease both">
+        <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#0e2748;opacity:.62">Shared weather · iOS</div>
+        <h1 style="margin:22px 0 0;font:900 clamp(44px,5.4vw,78px)/1.02 Nunito,system-ui;letter-spacing:-.035em;color:#0e2748;text-wrap:balance">Look after your loved ones <span style="display:inline-block;padding:0 .28em .08em;border-radius:.24em;background:#1a7bff;color:#fff">from anywhere</span></h1>
+        <p style="margin:26px 0 0;max-width:460px;font:700 clamp(17px,1.3vw,20px)/1.5 Nunito,system-ui;color:#0e2748;opacity:.78">See the real weather over your partner, family and friends, and send them an umbrella, coat or hydration reminder in advance.</p>
+        <div style="margin-top:34px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+          <a href="#download" style="display:inline-flex;align-items:center;gap:10px;padding:16px 22px;border-radius:999px;background:#0e2748;color:#fff;font:800 15px/1 Nunito,system-ui;box-shadow:0 18px 40px rgba(10,40,90,.28)" style-hover="background:#1a7bff;color:#fff">
+            <svg width="14" height="16" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#fff"></path></svg>
+            Download for iOS
+          </a>
+          <span style="font:700 14px/1 Nunito,system-ui;color:#0e2748;opacity:.6">Free · No account needed</span>
+        </div>
+      </div>
+
+      <div style="position:relative;height:clamp(520px,58vw,760px)">
+        <div data-depth="-0.06" style="position:absolute;left:4%;top:9%;width:52%;transform:rotate(-7deg);z-index:2;filter:drop-shadow(0 50px 80px rgba(10,40,100,.4))">
+          <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a;animation:cz-pop 1s .3s cubic-bezier(.2,.9,.3,1) both">
+            <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
+              <img src="assets/shot-rain.png" alt="Clouzy, rain over Gabriel" style="width:100%;display:block">
+              <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+            </div>
+          </div>
+        </div>
+        <div data-depth="0.05" style="position:absolute;right:2%;top:0;width:52%;transform:rotate(6deg);z-index:1;filter:drop-shadow(0 50px 80px rgba(10,40,100,.35))">
+          <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a;animation:cz-pop 1s .5s cubic-bezier(.2,.9,.3,1) both">
+            <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
+              <img src="assets/shot-heat.png" alt="Clouzy, extreme heat where Emma is" style="width:100%;display:block">
+              <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+            </div>
+          </div>
+        </div>
+        <div data-depth="-0.16" style="position:absolute;left:-18%;bottom:4%;width:36%;z-index:3">
+          <img src="assets/mascot.png" alt="Clouzy mascot" style="width:100%;display:block;filter:drop-shadow(0 30px 40px rgba(10,40,100,.35));animation:cz-float 7s ease-in-out infinite">
+        </div>
+      </div>
+    </div>
+
+    <div style="position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(180deg,rgba(238,243,255,0),#eef3ff)"></div>
+  </section>
+
+  <section id="how" style="position:relative;max-width:1240px;margin:0 auto;padding:110px 5vw 60px">
+    <div data-reveal style="max-width:640px">
+      <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">How it works</div>
+      <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Three steps. Then it just runs in the background.</h2>
+    </div>
+    <div style="margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px">
+      <div data-reveal style="padding:34px 32px;border-radius:32px;background:#fff;box-shadow:0 24px 60px rgba(20,60,140,.08)">
+        <div style="width:52px;height:52px;border-radius:18px;background:#e8f0ff;display:flex;align-items:center;justify-content:center;font:900 22px/1 Nunito,system-ui;color:#1a7bff">1</div>
+        <div style="margin-top:22px;font:900 24px/1.15 Nunito,system-ui;color:#0e2748">Add your people</div>
+        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:#5c6b85">Partner, family, friends. Send one invite link, they accept, done.</p>
+      </div>
+      <div data-reveal style="padding:34px 32px;border-radius:32px;background:#fff;box-shadow:0 24px 60px rgba(20,60,140,.08);transition-delay:.1s">
+        <div style="width:52px;height:52px;border-radius:18px;background:#e8f0ff;display:flex;align-items:center;justify-content:center;font:900 22px/1 Nunito,system-ui;color:#1a7bff">2</div>
+        <div style="margin-top:22px;font:900 24px/1.15 Nunito,system-ui;color:#0e2748">See their sky</div>
+        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:#5c6b85">Real weather and their local time, side by side with yours.</p>
+      </div>
+      <div data-reveal style="padding:34px 32px;border-radius:32px;background:#1a7bff;box-shadow:0 26px 60px rgba(26,123,255,.3);transition-delay:.2s">
+        <div style="width:52px;height:52px;border-radius:18px;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font:900 22px/1 Nunito,system-ui;color:#fff">3</div>
+        <div style="margin-top:22px;font:900 24px/1.15 Nunito,system-ui;color:#fff">Send a reminder</div>
+        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:rgba(255,255,255,.82)">Umbrella, coat, water. One tap, and they get a nudge from you.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="remind" style="position:relative;overflow:hidden;padding:100px 0">
+    <div data-depth="0.18" style="position:absolute;left:-8%;top:10%;width:40vw;height:40vw;border-radius:50%;background:rgba(26,123,255,.07)"></div>
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center">
+      <div style="position:relative;height:clamp(460px,46vw,640px)">
+        <div data-reveal style="position:absolute;left:8%;top:0;width:58%;z-index:1;filter:drop-shadow(0 50px 80px rgba(20,60,140,.28))">
+          <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a">
+            <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
+              <img src="assets/shot-rain.png" alt="Rain over Gabriel, Bring an umbrella button" style="width:100%;display:block">
+              <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+            </div>
+          </div>
+        </div>
+        <div data-depth="-0.14" style="position:absolute;right:-6%;top:-8%;width:34%;z-index:3;pointer-events:none">
+          <img src="assets/nimbo-umbrella.png" alt="Clouzy mascot holding an umbrella" style="width:100%;display:block;filter:drop-shadow(0 26px 36px rgba(20,60,140,.3));animation:cz-float 7s ease-in-out infinite">
+        </div>
+        <div data-reveal data-depth="-0.08" style="position:absolute;left:-2%;bottom:6%;width:96%;z-index:2;transition-delay:.15s;filter:drop-shadow(0 34px 60px rgba(15,50,120,.4))">
+          <img src="assets/zoom-umbrella.png" alt="Bring an umbrella button" style="width:100%;display:block;border-radius:5.5%/22%">
+        </div>
+      </div>
+      <div data-reveal>
+        <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Reminders</div>
+        <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Remind them to carry an <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#1a7bff;color:#fff">umbrella!</span></h2>
+        <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#5c6b85">You see the rain over them before they do. Clouzy suggests the right nudge for the moment: umbrella for rain, coat for a cold snap, water for a heatwave.</p>
+        <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:10px">
+          <span style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;font:800 14px/1 Nunito,system-ui;color:#0e2748;box-shadow:0 10px 24px rgba(20,60,140,.08)"><svg width="16" height="15" viewBox="0 0 24 22"><path d="M6.5 13h11a3.5 3.5 0 0 0 .3-7 5.5 5.5 0 0 0-10.5-1 4 4 0 0 0-.8 8z" fill="#1a7bff"></path><g stroke="#8ec0ff" stroke-width="2" stroke-linecap="round"><path d="M8 15.5l-1.3 3"></path><path d="M13 15.5l-1.3 3"></path></g></svg>Rain</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;font:800 14px/1 Nunito,system-ui;color:#0e2748;box-shadow:0 10px 24px rgba(20,60,140,.08)"><svg width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="#f5a01a"></circle><g stroke="#f5a01a" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.4"></path><path d="M12 19.6V22"></path><path d="M2 12h2.4"></path><path d="M19.6 12H22"></path><path d="M4.9 4.9l1.7 1.7"></path><path d="M17.4 17.4l1.7 1.7"></path><path d="M19.1 4.9l-1.7 1.7"></path><path d="M6.6 17.4l-1.7 1.7"></path></g></svg>Heatwaves</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;font:800 14px/1 Nunito,system-ui;color:#0e2748;box-shadow:0 10px 24px rgba(20,60,140,.08)"><svg width="16" height="16" viewBox="0 0 24 24"><g stroke="#5aa7e8" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M19.8 7.5l-15.6 9"></path></g></svg>Cold snaps</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;overflow:hidden;background:linear-gradient(180deg,#fff8e8,#ffeed3);padding:110px 0">
+    <img data-depth="-0.1" src="assets/nimbo-water.png" alt="" style="position:absolute;right:4%;top:6%;width:clamp(120px,14vw,220px);z-index:3;pointer-events:none;filter:drop-shadow(0 24px 34px rgba(150,90,10,.28))">
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center">
+      <div data-reveal>
+        <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#a85f0e">Any weather</div>
+        <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#3d2a0e;text-wrap:balance">Make sure they stay <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#f5a01a;color:#fff">hydrated</span></h2>
+        <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#8a5f1c">Extreme heat, storms, cold nights. Clouzy reads the forecast where they are and puts the right reminder one tap away, with their local time so you never nudge at 3 am.</p>
+      </div>
+      <div data-reveal style="position:relative;display:flex;justify-content:center;transition-delay:.1s">
+        <div data-depth="0.06" style="width:min(70%,380px);transform:rotate(3deg);filter:drop-shadow(-30px 40px 80px rgba(150,90,10,.3))">
+          <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a">
+            <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
+              <img src="assets/shot-heat.png" alt="Extreme heat where Emma is, Stay hydrated button" style="width:100%;display:block">
+              <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;max-width:1240px;margin:0 auto;padding:110px 5vw;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center">
+    <div data-reveal style="order:2">
+      <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Reactions</div>
+      <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">React with <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#1a7bff;color:#fff">one tap</span></h2>
+      <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#5c6b85">“Got my umbrella!”, “Bundling up!”, “I forgot!” Every reminder can be answered without typing, so it never turns into a chore.</p>
+    </div>
+    <div data-reveal style="order:1;position:relative;display:flex;justify-content:center">
+      <div style="width:min(70%,380px);filter:drop-shadow(0 50px 80px rgba(20,60,140,.26))">
+        <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a">
+          <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
+            <img src="assets/shot-alerts.png" alt="Alerts with one-tap reactions" style="width:100%;display:block">
+            <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="widgets" style="position:relative;overflow:hidden;background:linear-gradient(180deg,#e9f2ff 0%,#cfe2fb 60%,#b3d2f6 100%);padding:110px 0 140px">
+    <div data-depth="0.14" style="position:absolute;right:-10%;bottom:-20%;width:50vw;height:50vw;border-radius:50%;background:rgba(255,255,255,.4)"></div>
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 5vw">
+      <div data-reveal style="max-width:680px;text-align:center;margin:0 auto">
+        <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Widgets</div>
+        <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Everyone's sky on <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#1a7bff;color:#fff">your</span> Home Screen</h2>
+        <p style="margin:22px auto 0;max-width:520px;font:700 18px/1.5 Nunito,system-ui;color:#3d5c85">Three widget sizes. Check on all of them, and nudge them, without opening the app.</p>
+      </div>
+      <div style="position:relative;margin:70px auto 0;max-width:900px;height:clamp(420px,52vw,620px)">
+        <img data-reveal data-depth="-0.05" src="assets/w-large.png" alt="Large widget with everyone" style="position:absolute;left:50%;top:0;width:min(62%,520px);margin-left:-31%;border-radius:8%;box-shadow:0 40px 90px rgba(10,50,120,.32)">
+        <img data-reveal data-depth="0.08" src="assets/w-medium-coat.png" alt="Medium widget, Send coat" style="position:absolute;left:-2%;bottom:6%;width:min(52%,440px);border-radius:9%/18%;box-shadow:0 34px 70px rgba(10,50,120,.34);transition-delay:.15s">
+        <img data-reveal data-depth="0.14" src="assets/w-small.png" alt="Small widget, Sofia" style="position:absolute;right:0;bottom:16%;width:min(26%,220px);border-radius:16%;box-shadow:0 34px 70px rgba(10,50,120,.34);transition-delay:.3s">
+        <div data-depth="-0.2" style="position:absolute;right:4%;top:-4%;width:min(22%,180px)"><img src="assets/nimbo-coat.png" alt="" style="width:100%;display:block;animation:cz-float 8s ease-in-out infinite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" style="position:relative;overflow:hidden;background:linear-gradient(180deg,#2f6fbe 0%,#1a4f96 100%);padding:130px 5vw 60px;text-align:center">
+    <div data-depth="0.1" style="position:absolute;left:10%;top:10%;width:30vw;height:12vw;border-radius:999px;background:rgba(255,255,255,.1)"></div>
+    <div data-depth="0.2" style="position:absolute;right:6%;top:40%;width:24vw;height:10vw;border-radius:999px;background:rgba(255,255,255,.08)"></div>
+    <div data-reveal style="position:relative;max-width:760px;margin:0 auto">
+      <img src="assets/mascot.png" alt="" style="width:clamp(120px,14vw,190px);display:block;margin:0 auto;animation:cz-float 7s ease-in-out infinite;filter:drop-shadow(0 30px 40px rgba(0,20,60,.4))">
+      <h2 style="margin:30px 0 0;font:900 clamp(36px,4.6vw,64px)/1.03 Nunito,system-ui;letter-spacing:-.035em;color:#fff;text-wrap:balance">Someone you love is under a different sky.</h2>
+      <p style="margin:20px auto 0;max-width:480px;font:700 18px/1.5 Nunito,system-ui;color:rgba(255,255,255,.8)">Free on iPhone. Sign in with Apple, invite one person, and start looking after each other.</p>
+      <a href="#" style="margin-top:34px;display:inline-flex;align-items:center;gap:12px;padding:18px 28px;border-radius:999px;background:#fff;color:#0e2748;font:800 16px/1 Nunito,system-ui;box-shadow:0 20px 50px rgba(0,20,60,.35)" style-hover="background:#e8f0ff;color:#0e2748">
+        <svg width="16" height="18" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#0e2748"></path></svg>
+        Download on the App Store
+      </a>
+    </div>
+    <div style="position:relative;margin-top:110px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;max-width:1240px;margin-left:auto;margin-right:auto;padding-top:26px;border-top:1px solid rgba(255,255,255,.14);font:700 13px/1 Nunito,system-ui;color:rgba(255,255,255,.6)">
+      <span style="font:900 20px/1 Nunito,system-ui;color:#fff">clouzy</span>
+      <div style="display:flex;gap:26px">
+        <a href="privacy.html" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">Privacy</a>
+        <a href="terms.html" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">Terms</a>
+        <a href="mailto:bauti@clouzy.app" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">Support</a>
+      </div>
+      <span>© 2026 Clouzy</span>
+    </div>
+  </section>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const root = document;
+    // capture base transforms BEFORE the reveal offset is added
+    this.layers = [...root.querySelectorAll('[data-depth]')].map(el => ({
+      el, depth: parseFloat(el.dataset.depth), base: el.style.transform || ''
+    }));
+    this.reveals = [...root.querySelectorAll('[data-reveal]')];
+    this.reveals.forEach(el => {
+      const base = el.style.transform || '';
+      el.dataset.baseTransform = base;
+      el.style.opacity = '0';
+      el.style.transform = (base ? base + ' ' : '') + 'translateY(36px)';
+      el.style.transition = 'opacity .9s cubic-bezier(.2,.8,.2,1), transform .9s cubic-bezier(.2,.8,.2,1)';
+    });
+    this.io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        const el = e.target;
+        if (!e.isIntersecting) return;
+        el.style.opacity = '1';
+        el.style.transform = el.dataset.baseTransform || '';
+        this.io.unobserve(el);
+        // once revealed, only opacity keeps a transition so parallax tracks scroll 1:1
+        setTimeout(() => { el.style.transition = 'opacity .9s cubic-bezier(.2,.8,.2,1)'; if (this.onScroll) this.onScroll(); }, 950);
+      });
+    }, { threshold: 0.18 });
+    this.reveals.forEach(el => this.io.observe(el));
+    this.onScroll = () => {
+      const y = window.scrollY;
+      const vh = window.innerHeight;
+      for (const L of this.layers) {
+        const r = L.el.getBoundingClientRect();
+        if (r.bottom < -300 || r.top > vh + 300) continue;
+        const centre = r.top + r.height / 2 - vh / 2;
+        const shift = -centre * L.depth;
+        if (L.el.dataset.reveal !== undefined && L.el.style.opacity === '0') continue;
+        L.el.style.transform = `translate3d(0,${shift.toFixed(1)}px,0) ${L.base}`;
+      }
+    };
+    this.raf = null;
+    this.onScrollRaf = () => { if (this.raf) return; this.raf = requestAnimationFrame(() => { this.raf = null; this.onScroll(); }); };
+    window.addEventListener('scroll', this.onScrollRaf, { passive: true });
+    window.addEventListener('resize', this.onScrollRaf);
+    this.onScroll();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScrollRaf);
+    window.removeEventListener('resize', this.onScrollRaf);
+    if (this.io) this.io.disconnect();
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

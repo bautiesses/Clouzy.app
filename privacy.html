@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#eef3ff;font-family:Nunito,system-ui;color:#0e2748;-webkit-font-smoothing:antialiased}
+a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
+</style>
+</helmet>
+
+<div style="position:relative;overflow:hidden;min-height:100vh">
+
+  <div style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:22px 5vw;background:linear-gradient(180deg,rgba(238,243,255,.92),rgba(238,243,255,0));backdrop-filter:blur(6px)">
+    <a href="index.html" style="font:900 26px/1 Nunito,system-ui;letter-spacing:.01em;color:#1a7bff">clouzy</a>
+    <a href="index.html" style="font:800 14px/1 Nunito,system-ui;color:#3d5c85" style-hover="color:#1a7bff">← Back to site</a>
+  </div>
+
+  <div style="position:absolute;right:-12%;top:-8%;width:44vw;height:44vw;border-radius:50%;background:rgba(255,255,255,.7)"></div>
+  <div style="position:absolute;left:-10%;top:30%;width:36vw;height:36vw;border-radius:50%;background:rgba(26,123,255,.06)"></div>
+
+  <main style="position:relative;max-width:760px;margin:0 auto;padding:150px 5vw 120px">
+    <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Legal</div>
+    <h1 style="margin:16px 0 0;font:900 clamp(40px,5vw,64px)/1.02 Nunito,system-ui;letter-spacing:-.035em;color:#0e2748">Privacy Policy</h1>
+    <div style="margin-top:14px;font:700 15px/1 Nunito,system-ui;color:#7f93b5">Last updated: September 2026</div>
+
+    <p style="margin:34px 0 0;font:700 18px/1.6 Nunito,system-ui;color:#3d5c85">Clouzy (“we”, “our”, or “the app”) lets you share weather conditions with the people you care about and send them friendly weather reminders. This policy explains what data we collect, why, how long we keep it, and the choices you have. We wrote it to be read, not skimmed.</p>
+
+    <div style="margin-top:44px;display:flex;flex-direction:column;gap:18px">
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">1.</span> Information We Collect</h2>
+        <ul style="margin:16px 0 0;padding:0 0 0 22px;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85;display:flex;flex-direction:column;gap:8px">
+          <li><strong style="color:#0e2748">Display name.</strong> The name from your Apple account, shown to the friends you connect with. You can change it in the Profile tab.</li>
+          <li><strong style="color:#0e2748">City.</strong> We use your device’s location permission only to work out which city you are in, so we can fetch your local weather. We store the city name, never your coordinates.</li>
+          <li><strong style="color:#0e2748">Apple ID (Sign in with Apple).</strong> Only the anonymized identifier Apple gives us. We don’t receive your real email unless you choose to share it.</li>
+          <li><strong style="color:#0e2748">Device push token.</strong> Needed to deliver the reminders your friends send you.</li>
+          <li><strong style="color:#0e2748">Weather reminders.</strong> A record of the reminders you send and receive (who, what, when), so the Alerts tab can show your history.</li>
+        </ul>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">2.</span> Information We Do Not Collect</h2>
+        <ul style="margin:16px 0 0;padding:0 0 0 22px;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85;display:flex;flex-direction:column;gap:8px">
+          <li>No precise GPS coordinates or location history.</li>
+          <li>No contacts, photos, browsing history or usage analytics from other apps.</li>
+          <li>No advertising identifiers and no third-party trackers or ad SDKs.</li>
+          <li>We do not sell, rent or trade your data. Ever.</li>
+        </ul>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">3.</span> How We Use Your Information</h2>
+        <ul style="margin:16px 0 0;padding:0 0 0 22px;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85;display:flex;flex-direction:column;gap:8px">
+          <li>Show your current weather and local time to the friends you connect with.</li>
+          <li>Let you send weather reminders and receive theirs, and react to them.</li>
+          <li>Deliver push notifications when a friend sends you a reminder.</li>
+          <li>Let friends find you through the share code you give them.</li>
+          <li>Keep the service secure and fix bugs.</li>
+        </ul>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">We process this data because it is necessary to provide the service you asked for, and, where required by law, on the basis of your consent (for example, location and notification permissions).</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">4.</span> Who Processes Your Data</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">We rely on a small number of providers that act only under our instructions:</p>
+        <ul style="margin:12px 0 0;padding:0 0 0 22px;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85;display:flex;flex-direction:column;gap:8px">
+          <li><strong style="color:#0e2748">Supabase</strong> hosts our database and authentication.</li>
+          <li><strong style="color:#0e2748">Apple WeatherKit</strong> provides weather data. We request it live and do not store it permanently.</li>
+          <li><strong style="color:#0e2748">Apple Push Notification service</strong> delivers reminders to your device.</li>
+        </ul>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">Data is encrypted in transit (HTTPS) and protected with access controls at rest.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">5.</span> Who Can See Your Data</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">Only the friends you explicitly connect with inside the app can see your name, city, weather and the reminders you exchange. You can remove a connection at any time, and they stop seeing you immediately. We never share your data with advertisers or other third parties, except if required by law.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">6.</span> How Long We Keep It</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">We keep your data only while your account exists. Reminder history is kept so you can see it in the Alerts tab. When you delete your account, all of it (profile, connections, reminders and push token) is permanently removed from our servers within 30 days.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">7.</span> Your Choices and Rights</h2>
+        <ul style="margin:16px 0 0;padding:0 0 0 22px;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85;display:flex;flex-direction:column;gap:8px">
+          <li><strong style="color:#0e2748">Delete your account</strong> anytime from the Profile tab. No email needed.</li>
+          <li><strong style="color:#0e2748">Notifications</strong> can be turned off in iOS Settings › Notifications › Clouzy.</li>
+          <li><strong style="color:#0e2748">Location</strong> can be revoked in iOS Settings › Privacy › Location Services. The app will keep working with the last city you set.</li>
+          <li><strong style="color:#0e2748">Access or correct</strong> your data by writing to us. If you live in the EU, UK, California or another region with privacy laws, you have the rights those laws grant you, and we honour them for everyone regardless of where you live.</li>
+        </ul>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">8.</span> Children’s Privacy</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">Clouzy is not directed at children under 13, and we do not knowingly collect data from them. If we learn we have, we delete it.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07)">
+        <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">9.</span> Changes to This Policy</h2>
+        <p style="margin:14px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">If we change this policy, we update the date at the top and let you know inside the app before the change takes effect.</p>
+      </section>
+
+      <section style="padding:30px 32px;border-radius:28px;background:#fff;box-shadow:0 20px 50px rgba(20,60,140,.07);display:flex;align-items:center;gap:22px;flex-wrap:wrap">
+        <img src="assets/mascot.png" alt="" style="width:72px;display:block">
+        <div style="flex:1;min-width:200px">
+          <h2 style="margin:0;font:900 22px/1.2 Nunito,system-ui;color:#0e2748"><span style="color:#1a7bff">10.</span> Contact</h2>
+          <p style="margin:8px 0 0;font:700 16px/1.6 Nunito,system-ui;color:#3d5c85">Questions or requests about your data? Write to <a href="mailto:bauti@clouzy.app">bauti@clouzy.app</a>. We reply within a few days.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;max-width:1240px;margin:0 auto;padding:26px 5vw 40px;border-top:1px solid rgba(14,39,72,.1);font:700 13px/1 Nunito,system-ui;color:#7f93b5">
+    <span style="font:900 20px/1 Nunito,system-ui;color:#1a7bff">clouzy</span>
+    <div style="display:flex;gap:26px">
+      <a href="privacy.html" style="color:#3d5c85" style-hover="color:#1a7bff">Privacy</a>
+      <a href="terms.html" style="color:#3d5c85" style-hover="color:#1a7bff">Terms</a>
+      <a href="mailto:bauti@clouzy.app" style="color:#3d5c85" style-hover="color:#1a7bff">Support</a>
+    </div>
+    <span>© 2026 Clouzy</span>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}"></script>
+</body>
+</html>
