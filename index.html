@@ -19,19 +19,16 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
 @keyframes cz-in{0%{opacity:0;transform:translateY(28px)}100%{opacity:1;transform:translateY(0)}}
 @keyframes cz-pop{0%{opacity:0;transform:scale(.92) translateY(30px)}100%{opacity:1;transform:scale(1) translateY(0)}}
 @media (max-width:900px){
-  [data-two]{grid-template-columns:1fr !important;gap:40px !important}
+  [data-two]{grid-template-columns:1fr !important;gap:36px !important}
   [data-swap]{order:-1 !important}
   [data-hero]{padding-top:130px !important}
-  [data-hero-stage]{height:clamp(400px,108vw,560px) !important}
-  [data-hero-stage] [data-phone]{width:64% !important;left:14% !important;top:4% !important}
-  [data-hide-sm]{display:none !important}
-  [data-hero-stage] [data-mascot]{width:46% !important;left:-4% !important;bottom:0 !important}
-  [data-stack]{height:auto !important;display:flex !important;flex-direction:column !important;align-items:center !important;gap:26px !important}
-  [data-stack]>*{position:relative !important;left:auto !important;right:auto !important;top:auto !important;bottom:auto !important;width:min(88%,360px) !important;margin:0 !important;transform:none !important}
+  [data-hero-stage]{height:112vw !important;margin-top:10px}
+  [data-hero-stage] [data-mascot]{width:40% !important;left:-8% !important}
+  [data-remind-stage]{height:122vw !important;margin-bottom:10px;order:2}
+  [data-remind-stage]>[data-reveal]:first-child{width:52% !important;left:10% !important}
+  [data-remind-stage] [data-depth="-0.14"]{width:30% !important;top:-4% !important}
+  [data-widget-stage]{height:118vw !important;margin-top:50px !important}
   [data-nav-item]{display:none !important}
-}
-@media (max-width:560px){
-  [data-hero-stage]{height:clamp(360px,104vw,480px) !important}
 }
 </style>
 </helmet>
@@ -59,15 +56,13 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
 
     <div style="position:relative;max-width:1240px;margin:0 auto;padding:150px 5vw 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center" data-two data-hero>
       <div style="animation:cz-in .9s .1s ease both">
-        <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#0e2748;opacity:.62">Shared weather · iOS</div>
-        <h1 style="margin:22px 0 0;font:900 clamp(44px,5.4vw,78px)/1.02 Nunito,system-ui;letter-spacing:-.035em;color:#0e2748;text-wrap:balance">Look after your loved ones <span style="display:inline-block;padding:0 .28em .08em;border-radius:.24em;background:#1a7bff;color:#fff">from anywhere</span></h1>
-        <p style="margin:26px 0 0;max-width:460px;font:700 clamp(17px,1.3vw,20px)/1.5 Nunito,system-ui;color:#0e2748;opacity:.78">See the real weather over your partner, family and friends, and send them an umbrella, coat or hydration reminder in advance.</p>
+        <h1 style="margin:0;font:900 clamp(44px,5.4vw,78px)/1.02 Nunito,system-ui;letter-spacing:-.035em;color:#0e2748;text-wrap:balance">Look after your loved ones <span style="display:inline-block;padding:0 .28em .08em;border-radius:.24em;background:#1a7bff;color:#fff">from anywhere</span></h1>
+        <p style="margin:26px 0 0;max-width:460px;font:700 clamp(17px,1.3vw,20px)/1.5 Nunito,system-ui;color:#0e2748;opacity:.78">Clouzy shows you the weather where your partner, family and friends are, and lets you send them a reminder before it turns. Umbrella, coat or water, one tap and it's on its way.</p>
         <div style="margin-top:34px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
           <a href="#download" style="display:inline-flex;align-items:center;gap:10px;padding:16px 22px;border-radius:999px;background:#0e2748;color:#fff;font:800 15px/1 Nunito,system-ui;box-shadow:0 18px 40px rgba(10,40,90,.28)" style-hover="background:#1a7bff;color:#fff">
             <svg width="14" height="16" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#fff"></path></svg>
             Download for iOS
           </a>
-          <span style="font:700 14px/1 Nunito,system-ui;color:#0e2748;opacity:.6">Free · No account needed</span>
         </div>
       </div>
 
@@ -80,7 +75,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
             </div>
           </div>
         </div>
-        <div data-hide-sm data-depth="0.05" style="position:absolute;right:2%;top:0;width:52%;transform:rotate(6deg);z-index:1;filter:drop-shadow(0 50px 80px rgba(10,40,100,.35))">
+        <div data-depth="0.05" style="position:absolute;right:2%;top:0;width:52%;transform:rotate(6deg);z-index:1;filter:drop-shadow(0 50px 80px rgba(10,40,100,.35))">
           <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a;animation:cz-pop 1s .5s cubic-bezier(.2,.9,.3,1) both">
             <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
               <img src="assets/shot-heat.png" alt="Clouzy, extreme heat where Emma is" style="width:100%;display:block">
@@ -100,23 +95,23 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
   <section id="how" style="position:relative;max-width:1240px;margin:0 auto;padding:110px 5vw 60px">
     <div data-reveal style="max-width:640px">
       <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">How it works</div>
-      <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Three steps. Then it just runs in the background.</h2>
+      <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Set up in a minute. Then it just lives on your phone.</h2>
     </div>
     <div style="margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px">
       <div data-reveal style="padding:34px 32px;border-radius:32px;background:#fff;box-shadow:0 24px 60px rgba(20,60,140,.08)">
         <div style="width:52px;height:52px;border-radius:18px;background:#e8f0ff;display:flex;align-items:center;justify-content:center;font:900 22px/1 Nunito,system-ui;color:#1a7bff">1</div>
         <div style="margin-top:22px;font:900 24px/1.15 Nunito,system-ui;color:#0e2748">Add your people</div>
-        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:#5c6b85">Partner, family, friends. Send one invite link, they accept, done.</p>
+        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:#5c6b85">Share your code with the people you care about. They accept, and you're connected.</p>
       </div>
       <div data-reveal style="padding:34px 32px;border-radius:32px;background:#fff;box-shadow:0 24px 60px rgba(20,60,140,.08);transition-delay:.1s">
         <div style="width:52px;height:52px;border-radius:18px;background:#e8f0ff;display:flex;align-items:center;justify-content:center;font:900 22px/1 Nunito,system-ui;color:#1a7bff">2</div>
         <div style="margin-top:22px;font:900 24px/1.15 Nunito,system-ui;color:#0e2748">See their sky</div>
-        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:#5c6b85">Real weather and their local time, side by side with yours.</p>
+        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:#5c6b85">Their weather and local time show up next to yours, always current.</p>
       </div>
       <div data-reveal style="padding:34px 32px;border-radius:32px;background:#1a7bff;box-shadow:0 26px 60px rgba(26,123,255,.3);transition-delay:.2s">
         <div style="width:52px;height:52px;border-radius:18px;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font:900 22px/1 Nunito,system-ui;color:#fff">3</div>
         <div style="margin-top:22px;font:900 24px/1.15 Nunito,system-ui;color:#fff">Send a reminder</div>
-        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:rgba(255,255,255,.82)">Umbrella, coat, water. One tap, and they get a nudge from you.</p>
+        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:rgba(255,255,255,.82)">When the forecast turns, the right reminder is already waiting. Tap it and it lands on their phone.</p>
       </div>
     </div>
   </section>
@@ -124,7 +119,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
   <section id="remind" style="position:relative;overflow:hidden;padding:100px 0">
     <div data-depth="0.18" style="position:absolute;left:-8%;top:10%;width:40vw;height:40vw;border-radius:50%;background:rgba(26,123,255,.07)"></div>
     <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center" data-two>
-      <div data-stack style="position:relative;height:clamp(460px,46vw,640px)">
+      <div data-remind-stage style="position:relative;height:clamp(460px,46vw,640px)">
         <div data-reveal style="position:absolute;left:8%;top:0;width:58%;z-index:1;filter:drop-shadow(0 50px 80px rgba(20,60,140,.28))">
           <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a">
             <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
@@ -141,9 +136,8 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
         </div>
       </div>
       <div data-reveal>
-        <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Reminders</div>
-        <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Remind them to carry an <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#1a7bff;color:#fff">umbrella!</span></h2>
-        <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#5c6b85">You see the rain over them before they do. Clouzy suggests the right nudge for the moment: umbrella for rain, coat for a cold snap, water for a heatwave.</p>
+        <h2 style="margin:0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Remind them to carry an <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#1a7bff;color:#fff">umbrella!</span></h2>
+        <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#5c6b85">You see the rain over them before they do. Send the reminder while they're still having breakfast, and they leave home dry, thinking of you.</p>
         <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:10px">
           <span style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;font:800 14px/1 Nunito,system-ui;color:#0e2748;box-shadow:0 10px 24px rgba(20,60,140,.08)"><svg width="16" height="15" viewBox="0 0 24 22"><path d="M6.5 13h11a3.5 3.5 0 0 0 .3-7 5.5 5.5 0 0 0-10.5-1 4 4 0 0 0-.8 8z" fill="#1a7bff"></path><g stroke="#8ec0ff" stroke-width="2" stroke-linecap="round"><path d="M8 15.5l-1.3 3"></path><path d="M13 15.5l-1.3 3"></path></g></svg>Rain</span>
           <span style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;font:800 14px/1 Nunito,system-ui;color:#0e2748;box-shadow:0 10px 24px rgba(20,60,140,.08)"><svg width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="#f5a01a"></circle><g stroke="#f5a01a" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.4"></path><path d="M12 19.6V22"></path><path d="M2 12h2.4"></path><path d="M19.6 12H22"></path><path d="M4.9 4.9l1.7 1.7"></path><path d="M17.4 17.4l1.7 1.7"></path><path d="M19.1 4.9l-1.7 1.7"></path><path d="M6.6 17.4l-1.7 1.7"></path></g></svg>Heatwaves</span>
@@ -159,7 +153,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
       <div data-reveal>
         <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#a85f0e">Any weather</div>
         <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#3d2a0e;text-wrap:balance">Make sure they stay <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#f5a01a;color:#fff">hydrated</span></h2>
-        <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#8a5f1c">Extreme heat, storms, cold nights. Clouzy reads the forecast where they are and puts the right reminder one tap away, with their local time so you never nudge at 3 am.</p>
+        <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#8a5f1c">A heatwave in their city, a cold night in yours. Clouzy reads the forecast where each of you is and shows their local time, so the reminder arrives when it's actually useful.</p>
       </div>
       <div data-reveal style="position:relative;display:flex;justify-content:center;transition-delay:.1s">
         <div data-depth="0.06" style="width:min(70%,380px);transform:rotate(3deg);filter:drop-shadow(-30px 40px 80px rgba(150,90,10,.3))">
@@ -178,7 +172,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
     <div data-reveal style="order:2">
       <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Reactions</div>
       <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">React with <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#1a7bff;color:#fff">one tap</span></h2>
-      <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#5c6b85">“Got my umbrella!”, “Bundling up!”, “I forgot!” Every reminder can be answered without typing, so it never turns into a chore.</p>
+      <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#5c6b85">“Got my umbrella!”, “Bundling up!”, “I forgot!” They answer with a tap, and you know they saw it. A small back and forth that makes the distance feel shorter.</p>
     </div>
     <div data-reveal style="order:1;position:relative;display:flex;justify-content:center">
       <div style="width:min(70%,380px);filter:drop-shadow(0 50px 80px rgba(20,60,140,.26))">
@@ -198,9 +192,9 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
       <div data-reveal style="max-width:680px;text-align:center;margin:0 auto">
         <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Widgets</div>
         <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Everyone's sky on <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#1a7bff;color:#fff">your</span> Home Screen</h2>
-        <p style="margin:22px auto 0;max-width:520px;font:700 18px/1.5 Nunito,system-ui;color:#3d5c85">Three widget sizes. Check on all of them, and nudge them, without opening the app.</p>
+        <p style="margin:22px auto 0;max-width:520px;font:700 18px/1.5 Nunito,system-ui;color:#3d5c85">A glance at your Home Screen tells you how their day looks. Three sizes, from one person to everyone.</p>
       </div>
-      <div data-stack style="position:relative;margin:70px auto 0;max-width:900px;height:clamp(420px,52vw,620px)">
+      <div data-widget-stage style="position:relative;margin:70px auto 0;max-width:900px;height:clamp(420px,52vw,620px)">
         <img data-reveal data-depth="-0.05" src="assets/w-large.png" alt="Large widget with everyone" style="position:absolute;left:50%;top:0;width:min(62%,520px);margin-left:-31%;border-radius:8%;box-shadow:0 40px 90px rgba(10,50,120,.32)">
         <img data-reveal data-depth="0.08" src="assets/w-medium-coat.png" alt="Medium widget, Send coat" style="position:absolute;left:-2%;bottom:6%;width:min(52%,440px);border-radius:9%/18%;box-shadow:0 34px 70px rgba(10,50,120,.34);transition-delay:.15s">
         <img data-reveal data-depth="0.14" src="assets/w-small.png" alt="Small widget, Sofia" style="position:absolute;right:0;bottom:16%;width:min(26%,220px);border-radius:16%;box-shadow:0 34px 70px rgba(10,50,120,.34);transition-delay:.3s">
@@ -215,7 +209,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
     <div data-reveal style="position:relative;max-width:760px;margin:0 auto">
       <img src="assets/mascot.png" alt="" style="width:clamp(120px,14vw,190px);display:block;margin:0 auto;animation:cz-float 7s ease-in-out infinite;filter:drop-shadow(0 30px 40px rgba(0,20,60,.4))">
       <h2 style="margin:30px 0 0;font:900 clamp(36px,4.6vw,64px)/1.03 Nunito,system-ui;letter-spacing:-.035em;color:#fff;text-wrap:balance">Someone you love is under a different sky.</h2>
-      <p style="margin:20px auto 0;max-width:480px;font:700 18px/1.5 Nunito,system-ui;color:rgba(255,255,255,.8)">Free on iPhone. Sign in with Apple, invite one person, and start looking after each other.</p>
+      <p style="margin:20px auto 0;max-width:480px;font:700 18px/1.5 Nunito,system-ui;color:rgba(255,255,255,.8)">Free on iPhone. Invite one person today and be the first to know when their weather changes.</p>
       <a href="#" style="margin-top:34px;display:inline-flex;align-items:center;gap:12px;padding:18px 28px;border-radius:999px;background:#fff;color:#0e2748;font:800 16px/1 Nunito,system-ui;box-shadow:0 20px 50px rgba(0,20,60,.35)" style-hover="background:#e8f0ff;color:#0e2748">
         <svg width="16" height="18" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#0e2748"></path></svg>
         Download on the App Store
