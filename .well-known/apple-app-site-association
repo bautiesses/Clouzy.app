@@ -2,7 +2,7 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["97RCLBT89S.bautiesses.brisa"],
+        "appIDs": ["97RCLBT89S.com.bautiesses.Weather-app"],
         "components": [
           { "/": "/invite" }
         ]
