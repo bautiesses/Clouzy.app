@@ -1,9 +1,6 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/invite/:code", "destination": "/public/invite/index.html" }
-  ],
   "headers": [
     {
       "source": "/assets/(.*)",
