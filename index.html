@@ -55,7 +55,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
   [data-nav-item]{display:none !important}
 }
 </style>
-<script>(function(){var n=0,t=setInterval(function(){var v=document.querySelector('video[data-promo]');if(v){v.muted=true;v.defaultMuted=true;var p=v.play();if(p&&p.catch)p.catch(function(){});clearInterval(t);}if(++n>200)clearInterval(t);},100);})();</script>
+<script>(function(){function arm(v){if(v.__cz)return;v.__cz=1;v.muted=true;v.defaultMuted=true;v.loop=true;v.autoplay=true;v.playsInline=true;v.setAttribute('muted','');v.setAttribute('loop','');v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.addEventListener('ended',function(){v.currentTime=0;v.play().catch(function(){});});var go=function(){var p=v.play();if(p&&p.catch)p.catch(function(){});};go();v.addEventListener('canplay',go,{once:true});}var n=0,t=setInterval(function(){var v=document.querySelector('video[data-promo]');if(v)arm(v);if(++n>300)clearInterval(t);},100);})();</script>
 </helmet>
 
 <div style="position:relative;overflow:hidden">
