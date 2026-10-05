@@ -1,10 +1,5 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "headers": [
-    {
-      "source": "/assets/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
-    }
+  "redirects": [
+    { "source": "/get", "destination": "https://apps.apple.com/us/app/clouzy/id6811368968", "permanent": false }
   ]
 }

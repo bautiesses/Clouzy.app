@@ -9,6 +9,7 @@
 <x-dc>
 <helmet data-dc-atomics>
 <title>Clouzy — See their weather, send a reminder before it turns</title>
+<meta name="apple-itunes-app" content="app-id=6811368968">
 <meta name="description" content="Clouzy shows you the weather where your partner, family and friends are, and lets you send them an umbrella, coat or hydration reminder in one tap. Free on iPhone.">
 <link rel="canonical" href="https://clouzy.app/">
 <meta name="robots" content="index, follow">
@@ -53,6 +54,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
   [data-remind-stage] [data-notif]{right:-3% !important;top:30% !important;width:50% !important}
   [data-widget-stage]{height:118vw !important;margin-top:50px !important}
   [data-nav-item]{display:none !important}
+  [data-qr]{display:none !important}
 }
 </style>
 <script>(function(){function arm(v){if(v.__cz)return;v.__cz=1;v.muted=true;v.defaultMuted=true;v.loop=true;v.autoplay=true;v.playsInline=true;v.setAttribute('muted','');v.setAttribute('loop','');v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.addEventListener('ended',function(){v.currentTime=0;v.play().catch(function(){});});var go=function(){var p=v.play();if(p&&p.catch)p.catch(function(){});};go();v.addEventListener('canplay',go,{once:true});}var n=0,t=setInterval(function(){var v=document.querySelector('video[data-promo]');if(v)arm(v);if(++n>300)clearInterval(t);},100);})();</script>
@@ -66,7 +68,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
       <a data-nav-item href="#how" style="color:#3d5c85" style-hover="color:#1a7bff">How it works</a>
       <a data-nav-item href="#remind" style="color:#3d5c85" style-hover="color:#1a7bff">Reminders</a>
       <a data-nav-item href="#widgets" style="color:#3d5c85" style-hover="color:#1a7bff">Widgets</a>
-      <a href="#download" style="display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:999px;background:#0e2748;color:#fff" style-hover="background:#1a7bff;color:#fff">
+      <a href="/get" style="display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:999px;background:#0e2748;color:#fff" style-hover="background:#1a7bff;color:#fff">
         <svg width="12" height="14" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#fff"></path></svg>
         Get the app
       </a>
@@ -84,7 +86,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
         <h1 style="margin:0;font:900 clamp(44px,5.4vw,78px)/1.02 Nunito,system-ui;letter-spacing:-.035em;color:#0e2748;text-wrap:balance">Look after your loved ones <span style="display:inline-block;padding:0 .28em .08em;border-radius:.24em;background:#1a7bff;color:#fff">from anywhere</span></h1>
         <p style="margin:26px 0 0;max-width:460px;font:700 clamp(17px,1.3vw,20px)/1.5 Nunito,system-ui;color:#0e2748;opacity:.78">Clouzy shows you the weather where your partner, family and friends are, and lets you send them a reminder before it turns. Umbrella, coat or water, one tap and it's on its way.</p>
         <div style="margin-top:34px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
-          <a href="#download" style="display:inline-flex;align-items:center;gap:10px;padding:16px 22px;border-radius:999px;background:#0e2748;color:#fff;font:800 15px/1 Nunito,system-ui;box-shadow:0 18px 40px rgba(10,40,90,.28)" style-hover="background:#1a7bff;color:#fff">
+          <a href="/get" style="display:inline-flex;align-items:center;gap:10px;padding:16px 22px;border-radius:999px;background:#0e2748;color:#fff;font:800 15px/1 Nunito,system-ui;box-shadow:0 18px 40px rgba(10,40,90,.28)" style-hover="background:#1a7bff;color:#fff">
             <svg width="14" height="16" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#fff"></path></svg>
             Download for iOS
           </a>
@@ -105,6 +107,15 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
             <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
               <img src="assets/shot-heat.png" alt="Clouzy, extreme heat where Emma is" style="width:100%;display:block">
               <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+            </div>
+          </div>
+        </div>
+        <div data-qr data-depth="-0.1" style="position:absolute;right:-5%;bottom:6%;z-index:4;animation:cz-pop 1s .8s cubic-bezier(.2,.9,.3,1) both">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:14px 14px 12px;border-radius:24px;background:rgba(255,255,255,.96);box-shadow:0 24px 50px rgba(10,40,100,.28);transform:rotate(4deg)">
+            <img src="qr-get.svg" alt="QR code to download Clouzy on the App Store" style="width:118px;height:118px;display:block;image-rendering:pixelated">
+            <div style="display:flex;align-items:center;gap:6px;font:800 12px/1 Nunito,system-ui;color:#0e2748">
+              <svg width="11" height="13" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#0e2748"></path></svg>
+              Scan to download
             </div>
           </div>
         </div>
@@ -294,7 +305,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
       <img src="assets/mascot.png" alt="" style="width:clamp(120px,14vw,190px);display:block;margin:0 auto;animation:cz-float 7s ease-in-out infinite;filter:drop-shadow(0 30px 40px rgba(0,20,60,.4))">
       <h2 style="margin:30px 0 0;font:900 clamp(36px,4.6vw,64px)/1.03 Nunito,system-ui;letter-spacing:-.035em;color:#fff;text-wrap:balance">Someone you love is under a different sky.</h2>
       <p style="margin:20px auto 0;max-width:480px;font:700 18px/1.5 Nunito,system-ui;color:rgba(255,255,255,.8)">Free on iPhone. Invite one person today and be the first to know when their weather changes.</p>
-      <a href="#" style="margin-top:34px;display:inline-flex;align-items:center;gap:12px;padding:18px 28px;border-radius:999px;background:#fff;color:#0e2748;font:800 16px/1 Nunito,system-ui;box-shadow:0 20px 50px rgba(0,20,60,.35)" style-hover="background:#e8f0ff;color:#0e2748">
+      <a href="/get" style="margin-top:34px;display:inline-flex;align-items:center;gap:12px;padding:18px 28px;border-radius:999px;background:#fff;color:#0e2748;font:800 16px/1 Nunito,system-ui;box-shadow:0 20px 50px rgba(0,20,60,.35)" style-hover="background:#e8f0ff;color:#0e2748">
         <svg width="16" height="18" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#0e2748"></path></svg>
         Download on the App Store
       </a>
