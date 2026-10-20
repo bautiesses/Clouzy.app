@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clouzy — Mira su clima y avísale antes de que cambie</title>
+<meta name="apple-itunes-app" content="app-id=6811368968">
+<meta name="description" content="Clouzy te muestra el clima donde están tu pareja, tu familia y tus amigos, y te deja mandarles un recordatorio de paraguas, abrigo o hidratación con un toque. Gratis en iPhone.">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Clouzy">
+<meta property="og:title" content="Clouzy — Mira su clima y avísale antes de que cambie">
+<meta property="og:description" content="Clouzy te muestra el clima donde están tu pareja, tu familia y tus amigos, y te deja mandarles un recordatorio de paraguas, abrigo o hidratación con un toque. Gratis en iPhone.">
+<meta property="og:url" content="https://clouzy.app/es/">
+<meta property="og:locale" content="es_ES">
+<meta property="og:image" content="https://clouzy.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Clouzy — Mira su clima y avísale antes de que cambie">
+<meta name="twitter:description" content="Clouzy te muestra el clima donde están tu pareja, tu familia y tus amigos, y te deja mandarles un recordatorio de paraguas, abrigo o hidratación con un toque. Gratis en iPhone.">
+<meta name="twitter:image" content="https://clouzy.app/og-image.png">
+<meta name="application-name" content="Clouzy">
+<meta name="apple-mobile-web-app-title" content="Clouzy">
+<meta name="theme-color" content="#eef3ff">
+<link rel="canonical" href="https://clouzy.app/es/">
+<link rel="alternate" hreflang="en" href="https://clouzy.app/">
+<link rel="alternate" hreflang="es" href="https://clouzy.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://clouzy.app/">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://clouzy.app/#org","name":"Clouzy","url":"https://clouzy.app/","logo":"https://clouzy.app/favicon-192.png","email":"bauti@clouzy.app","sameAs":["https://apps.apple.com/us/app/clouzy/id6811368968"]},{"@type":"WebSite","@id":"https://clouzy.app/es/#website","name":"Clouzy","alternateName":["Clouzy App","Clouzy clima"],"url":"https://clouzy.app/es/","publisher":{"@id":"https://clouzy.app/#org"},"inLanguage":"es"},{"@type":"SoftwareApplication","@id":"https://clouzy.app/#app","name":"Clouzy","applicationCategory":"LifestyleApplication","applicationSubCategory":"Weather","operatingSystem":"iOS 17.0 o posterior","url":"https://clouzy.app/es/","image":"https://clouzy.app/og-image.png","inLanguage":"es","description":"Clouzy te muestra el clima donde están tu pareja, tu familia y tus amigos, y te deja mandarles un recordatorio de paraguas, abrigo o hidratación antes de que cambie.","featureList":["Mira el clima real y la hora local de las personas con las que te conectas","Manda recordatorios de paraguas, abrigo e hidratación con un toque","Responde con una selfie sellada con tu clima","Widgets de pantalla de inicio en tres tamaños"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://clouzy.app/#org"}},{"@type":"FAQPage","@id":"https://clouzy.app/es/#faq","inLanguage":"es","mainEntity":[{"@type":"Question","name":"¿Qué es Clouzy?","acceptedAnswer":{"@type":"Answer","text":"Clouzy es una app gratuita para iPhone que te muestra el clima real donde están tu pareja, tu familia y tus amigos, y te deja mandarles un recordatorio para llevar paraguas, abrigarse o tomar agua antes de que el clima cambie."}},{"@type":"Question","name":"¿Cómo me conecto con alguien en Clouzy?","acceptedAnswer":{"@type":"Answer","text":"Comparte tu código de invitación con la persona que quieras. Cuando acepta, los dos ven el clima y la hora local del otro y pueden mandarse recordatorios."}},{"@type":"Question","name":"¿Clouzy es gratis?","acceptedAnswer":{"@type":"Answer","text":"Sí. Clouzy es gratis en iPhone. Inicias sesión con Apple, no hay anuncios ni cuentas que crear."}},{"@type":"Question","name":"¿Clouzy comparte mi ubicación?","acceptedAnswer":{"@type":"Answer","text":"No. Clouzy solo usa tu ubicación para saber en qué ciudad estás y comparte el nombre de la ciudad con las personas que tú conectas. Nunca guarda ni comparte tus coordenadas exactas."}},{"@type":"Question","name":"¿Clouzy tiene widgets?","acceptedAnswer":{"@type":"Answer","text":"Sí. Clouzy tiene tres tamaños de widget, desde una persona hasta todos los que sigues, para mirar cómo están sin abrir la app."}}]}]}</script>
+<script src="../support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#eef3ff;font-family:Nunito,system-ui;color:#0e2748;-webkit-font-smoothing:antialiased}
+a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
+@keyframes cz-float{0%,100%{transform:translateY(0) rotate(-1.5deg)}50%{transform:translateY(-18px) rotate(1.5deg)}}
+@keyframes cz-drift{0%{transform:translateX(0)}100%{transform:translateX(60px)}}
+@keyframes cz-drop{0%{transform:translateY(-4px);opacity:0}15%{opacity:.9}75%{opacity:.4}100%{transform:translateY(120px);opacity:0}}
+@keyframes cz-in{0%{opacity:0;transform:translateY(28px)}100%{opacity:1;transform:translateY(0)}}
+@keyframes cz-ring{0%{box-shadow:0 0 0 0 rgba(26,123,255,.55)}70%{box-shadow:0 0 0 18px rgba(26,123,255,0)}100%{box-shadow:0 0 0 0 rgba(26,123,255,0)}}
+@keyframes cz-pop{0%{opacity:0;transform:scale(.92) translateY(30px)}100%{opacity:1;transform:scale(1) translateY(0)}}
+@media (max-width:900px){
+  [data-two]{grid-template-columns:1fr !important;gap:36px !important}
+  [data-swap]{order:-1 !important}
+  [data-hero]{padding-top:130px !important}
+  [data-hero-stage]{height:112vw !important;margin-top:10px}
+  [data-hero-stage] [data-mascot]{width:40% !important;left:-8% !important}
+  [data-remind-stage]{height:122vw !important;margin-bottom:10px;order:2}
+  [data-remind-stage]>[data-reveal]:first-child{width:52% !important;left:10% !important}
+  [data-remind-stage] [data-depth="-0.14"]{width:30% !important;top:-4% !important}
+  [data-remind-stage] [data-notif]{right:-3% !important;top:30% !important;width:50% !important}
+  [data-widget-stage]{height:118vw !important;margin-top:50px !important}
+  [data-nav-item]{display:none !important}
+  [data-qr-footer]{display:none !important}
+  [data-qr]{display:none !important}
+}
+</style>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a){try{localStorage.setItem('cz-lang',a.getAttribute('hreflang'))}catch(_){}}});(function(){function arm(v){if(v.__cz)return;v.__cz=1;v.muted=true;v.defaultMuted=true;v.loop=true;v.autoplay=true;v.playsInline=true;v.setAttribute('muted','');v.setAttribute('loop','');v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.addEventListener('ended',function(){v.currentTime=0;v.play().catch(function(){});});var go=function(){var p=v.play();if(p&&p.catch)p.catch(function(){});};go();v.addEventListener('canplay',go,{once:true});}var n=0,t=setInterval(function(){var v=document.querySelector('video[data-promo]');if(v)arm(v);if(++n>300)clearInterval(t);},100);})();</script>
+</helmet>
+
+<div style="position:relative;overflow:hidden">
+
+  <div style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:22px 5vw;background:linear-gradient(180deg,rgba(238,243,255,.92),rgba(238,243,255,0));backdrop-filter:blur(6px)">
+    <a href="#top" style="font:900 26px/1 Nunito,system-ui;letter-spacing:.01em;color:#1a7bff">clouzy</a>
+    <div style="display:flex;align-items:center;gap:30px;font:800 14px/1 Nunito,system-ui">
+      <a data-nav-item href="#how" style="color:#3d5c85" style-hover="color:#1a7bff">Cómo funciona</a>
+      <a data-nav-item href="#remind" style="color:#3d5c85" style-hover="color:#1a7bff">Recordatorios</a>
+      <a data-nav-item href="#widgets" style="color:#3d5c85" style-hover="color:#1a7bff">Widgets</a>
+      <a data-lang href="../" hreflang="en" lang="en" title="English" style="color:#3d5c85;letter-spacing:.06em" style-hover="color:#1a7bff">EN</a>
+      <a href="/get" style="display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:999px;background:#0e2748;color:#fff" style-hover="background:#1a7bff;color:#fff">
+        <svg width="12" height="14" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#fff"></path></svg>
+        Descargar
+      </a>
+    </div>
+  </div>
+
+  <section id="top" style="position:relative;min-height:100vh;overflow:hidden;background:linear-gradient(180deg,#bfe0fb 0%,#8ec3f2 38%,#4f95dd 78%,#2f6fbe 100%)">
+    <div data-depth="0.12" style="position:absolute;left:-10%;top:8%;width:52vw;height:52vw;border-radius:50%;background:rgba(255,255,255,.28);filter:blur(2px)"></div>
+    <div data-depth="0.22" style="position:absolute;right:-14%;top:-6%;width:46vw;height:46vw;border-radius:50%;background:rgba(255,255,255,.22)"></div>
+    <div data-depth="0.35" style="position:absolute;left:8%;top:62%;width:26vw;height:12vw"><div style="width:100%;height:100%;border-radius:999px;background:rgba(255,255,255,.35);animation:cz-drift 14s ease-in-out infinite alternate"></div></div>
+    <div data-depth="0.28" style="position:absolute;right:6%;top:72%;width:34vw;height:14vw"><div style="width:100%;height:100%;border-radius:999px;background:rgba(255,255,255,.26);animation:cz-drift 18s ease-in-out infinite alternate-reverse"></div></div>
+
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:150px 5vw 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:center" data-two data-hero>
+      <div style="animation:cz-in .9s .1s ease both">
+        <h1 style="margin:0;font:900 clamp(44px,5.4vw,78px)/1.02 Nunito,system-ui;letter-spacing:-.035em;color:#0e2748;text-wrap:balance">Cuida a quienes quieres <span style="display:inline-block;padding:0 .28em .08em;border-radius:.24em;background:#1a7bff;color:#fff">desde donde estés</span></h1>
+        <p style="margin:26px 0 0;max-width:460px;font:700 clamp(17px,1.3vw,20px)/1.5 Nunito,system-ui;color:#0e2748;opacity:.78">Clouzy te muestra el clima donde están tu pareja, tu familia y tus amigos, y te deja avisarles antes de que cambie. Paraguas, abrigo o agua: un toque y ya está en camino.</p>
+        <div style="margin-top:34px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+          <a href="/get" style="display:inline-flex;align-items:center;gap:10px;padding:16px 22px;border-radius:999px;background:#0e2748;color:#fff;font:800 15px/1 Nunito,system-ui;box-shadow:0 18px 40px rgba(10,40,90,.28)" style-hover="background:#1a7bff;color:#fff">
+            <svg width="14" height="16" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#fff"></path></svg>
+            Descargar para iOS
+          </a>
+        </div>
+      </div>
+
+      <div data-hero-stage style="position:relative;height:clamp(520px,58vw,760px)">
+        <div data-phone data-depth="-0.06" style="position:absolute;left:4%;top:9%;width:52%;transform:rotate(-7deg);z-index:2;filter:drop-shadow(0 50px 80px rgba(10,40,100,.4))">
+          <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a;animation:cz-pop 1s .3s cubic-bezier(.2,.9,.3,1) both">
+            <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
+              <img src="../assets/shot-rain-es.png" alt="Clouzy, lluvia donde está Gabriel" style="width:100%;display:block">
+              <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+            </div>
+          </div>
+        </div>
+        <div data-depth="0.05" style="position:absolute;right:2%;top:0;width:52%;transform:rotate(6deg);z-index:1;filter:drop-shadow(0 50px 80px rgba(10,40,100,.35))">
+          <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a;animation:cz-pop 1s .5s cubic-bezier(.2,.9,.3,1) both">
+            <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
+              <img src="../assets/shot-heat-es.png" alt="Clouzy, calor extremo donde está Emma" style="width:100%;display:block">
+              <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+            </div>
+          </div>
+        </div>
+        <div data-qr data-depth="-0.1" style="position:absolute;right:-5%;bottom:6%;z-index:4;animation:cz-pop 1s .8s cubic-bezier(.2,.9,.3,1) both">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:10px;padding:14px 14px 12px;border-radius:24px;background:rgba(255,255,255,.96);box-shadow:0 24px 50px rgba(10,40,100,.28);transform:rotate(4deg)">
+            <img src="../qr-get.svg" alt="Código QR para descargar Clouzy en el App Store" style="width:118px;height:118px;display:block;image-rendering:pixelated">
+            <div style="display:flex;align-items:center;gap:6px;font:800 12px/1 Nunito,system-ui;color:#0e2748">
+              <svg width="11" height="13" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#0e2748"></path></svg>
+              Escanea para descargar
+            </div>
+          </div>
+        </div>
+        <div data-mascot data-depth="-0.16" style="position:absolute;left:-18%;bottom:4%;width:36%;z-index:3">
+          <img src="../assets/mascot.png" alt="Mascota de Clouzy" style="width:100%;display:block;filter:drop-shadow(0 30px 40px rgba(10,40,100,.35));animation:cz-float 7s ease-in-out infinite">
+        </div>
+      </div>
+    </div>
+
+    <div style="position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(180deg,rgba(238,243,255,0),#eef3ff)"></div>
+  </section>
+
+  <section id="how" style="position:relative;max-width:1240px;margin:0 auto;padding:110px 5vw 60px">
+    <div data-reveal style="max-width:640px">
+      <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Cómo funciona</div>
+      <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Se configura en un minuto. Después vive en tu teléfono.</h2>
+    </div>
+    <div style="margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px">
+      <div data-reveal style="padding:34px 32px;border-radius:32px;background:#fff;box-shadow:0 24px 60px rgba(20,60,140,.08)">
+        <div style="width:52px;height:52px;border-radius:18px;background:#e8f0ff;display:flex;align-items:center;justify-content:center;font:900 22px/1 Nunito,system-ui;color:#1a7bff">1</div>
+        <div style="margin-top:22px;font:900 24px/1.15 Nunito,system-ui;color:#0e2748">Agrega a tu gente</div>
+        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:#5c6b85">Comparte tu código con las personas que te importan. Aceptan y ya están conectados.</p>
+      </div>
+      <div data-reveal style="padding:34px 32px;border-radius:32px;background:#fff;box-shadow:0 24px 60px rgba(20,60,140,.08);transition-delay:.1s">
+        <div style="width:52px;height:52px;border-radius:18px;background:#e8f0ff;display:flex;align-items:center;justify-content:center;font:900 22px/1 Nunito,system-ui;color:#1a7bff">2</div>
+        <div style="margin-top:22px;font:900 24px/1.15 Nunito,system-ui;color:#0e2748">Mira su cielo</div>
+        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:#5c6b85">Su clima y su hora local aparecen al lado de los tuyos, siempre al día.</p>
+      </div>
+      <div data-reveal style="padding:34px 32px;border-radius:32px;background:#1a7bff;box-shadow:0 26px 60px rgba(26,123,255,.3);transition-delay:.2s">
+        <div style="width:52px;height:52px;border-radius:18px;background:rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;font:900 22px/1 Nunito,system-ui;color:#fff">3</div>
+        <div style="margin-top:22px;font:900 24px/1.15 Nunito,system-ui;color:#fff">Manda un recordatorio</div>
+        <p style="margin:10px 0 0;font:700 16px/1.5 Nunito,system-ui;color:rgba(255,255,255,.82)">Cuando el pronóstico cambia, el recordatorio correcto ya está listo. Lo tocas y llega a su teléfono.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="watch" style="position:relative;overflow:hidden;background:linear-gradient(180deg,#eef3ff 0%,#dbe8fd 100%);padding:100px 0">
+    <div data-depth="0.16" style="position:absolute;right:-8%;top:8%;width:38vw;height:38vw;border-radius:50%;background:rgba(255,255,255,.6)"></div>
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center" data-two>
+      <div data-reveal>
+        <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">15 segundos</div>
+        <h2 style="margin:16px 0 0;font:900 clamp(36px,4.6vw,60px)/1.04 Nunito,system-ui;letter-spacing:-.035em;color:#0e2748;text-wrap:balance">Me empapé. Otra vez.<br>Nunca más.</h2>
+        <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.55 Nunito,system-ui;color:#3d5c85;text-wrap:pretty">De la lluvia sobre ellos al recordatorio en su bolsillo, con un toque.</p>
+      </div>
+      <div data-reveal data-swap style="display:flex;justify-content:center;transition-delay:.12s">
+        <div style="position:relative;width:min(340px,78vw);aspect-ratio:9/16;border-radius:44px;overflow:hidden;background:linear-gradient(180deg,#8ecbf5 0%,#2a7ed2 100%);box-shadow:0 40px 90px rgba(20,60,140,.32)">
+          <img src="../assets/mascot.png" alt="" style="position:absolute;left:50%;top:50%;width:55%;transform:translate(-50%,-50%);display:block">
+          <video data-promo src="../promo-es.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Clouzy en 15 segundos" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="remind" style="position:relative;overflow:hidden;padding:100px 0">
+    <div data-depth="0.18" style="position:absolute;left:-8%;top:10%;width:40vw;height:40vw;border-radius:50%;background:rgba(26,123,255,.07)"></div>
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center" data-two>
+      <div data-remind-stage style="position:relative;height:clamp(460px,46vw,640px)">
+        <div data-reveal style="position:absolute;left:8%;top:0;width:58%;z-index:1;filter:drop-shadow(0 50px 80px rgba(20,60,140,.28))">
+          <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a">
+            <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
+              <img src="../assets/shot-rain-es.png" alt="Lluvia donde está Gabriel, botón Lleva paraguas" style="width:100%;display:block">
+              <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+              <div style="position:absolute;left:5%;right:5%;top:78.85%;height:10.2%;box-sizing:border-box;border-radius:6.2%/26%;border:3px solid #1a7bff;animation:cz-ring 2.4s ease-out infinite"></div>
+            </div>
+          </div>
+        </div>
+        <div data-depth="-0.14" style="position:absolute;right:-6%;top:-8%;width:34%;z-index:3;pointer-events:none">
+          <img src="../assets/nimbo-umbrella.png" alt="Mascota de Clouzy con un paraguas" style="width:100%;display:block;filter:drop-shadow(0 26px 36px rgba(20,60,140,.3));animation:cz-float 7s ease-in-out infinite">
+        </div>
+        <div data-reveal data-notif data-depth="-0.06" style="position:absolute;right:-2%;top:36%;width:46%;z-index:2;transition-delay:.25s">
+          <div style="display:flex;flex-direction:column;gap:12px;padding:18px 18px 20px;border-radius:26px;background:rgba(255,255,255,.92);backdrop-filter:blur(18px);box-shadow:0 30px 70px rgba(15,50,120,.28),0 0 0 1px rgba(14,39,72,.06)">
+            <div style="display:flex;align-items:center;gap:12px">
+              <div style="width:40px;height:40px;flex:none;border-radius:12px;background:linear-gradient(160deg,#5fb2ff,#1a7bff);display:flex;align-items:center;justify-content:center;overflow:hidden">
+                <img src="../assets/mascot.png" alt="" style="width:31px;display:block">
+              </div>
+              <div style="flex:1;display:flex;justify-content:space-between;gap:8px;font:800 13px/1 Nunito,system-ui;color:#0e2748"><span>Clouzy</span><span style="font-weight:700;color:#7f93b5">ahora</span></div>
+            </div>
+            <div>
+              <div style="font:800 16px/1.3 Nunito,system-ui;color:#0e2748;text-wrap:pretty">Bauti te recordó llevar paraguas</div>
+              <div style="margin-top:4px;font:700 13px/1.35 Nunito,system-ui;color:#5c6b85">Se espera lluvia en São Paulo esta tarde</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-reveal>
+        <h2 style="margin:0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Recuérdales llevar el <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#1a7bff;color:#fff">paraguas</span></h2>
+        <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#5c6b85">Tú ves la lluvia sobre ellos antes que ellos. Manda el recordatorio mientras desayunan y salen de casa secos, pensando en ti.</p>
+        <div style="margin-top:28px;display:flex;flex-wrap:wrap;gap:10px">
+          <span style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;font:800 14px/1 Nunito,system-ui;color:#0e2748;box-shadow:0 10px 24px rgba(20,60,140,.08)"><svg width="16" height="15" viewBox="0 0 24 22"><path d="M6.5 13h11a3.5 3.5 0 0 0 .3-7 5.5 5.5 0 0 0-10.5-1 4 4 0 0 0-.8 8z" fill="#1a7bff"></path><g stroke="#8ec0ff" stroke-width="2" stroke-linecap="round"><path d="M8 15.5l-1.3 3"></path><path d="M13 15.5l-1.3 3"></path></g></svg>Lluvia</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;font:800 14px/1 Nunito,system-ui;color:#0e2748;box-shadow:0 10px 24px rgba(20,60,140,.08)"><svg width="16" height="16" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5" fill="#f5a01a"></circle><g stroke="#f5a01a" stroke-width="2" stroke-linecap="round"><path d="M12 2v2.4"></path><path d="M12 19.6V22"></path><path d="M2 12h2.4"></path><path d="M19.6 12H22"></path><path d="M4.9 4.9l1.7 1.7"></path><path d="M17.4 17.4l1.7 1.7"></path><path d="M19.1 4.9l-1.7 1.7"></path><path d="M6.6 17.4l-1.7 1.7"></path></g></svg>Olas de calor</span>
+          <span style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;background:#fff;font:800 14px/1 Nunito,system-ui;color:#0e2748;box-shadow:0 10px 24px rgba(20,60,140,.08)"><svg width="16" height="16" viewBox="0 0 24 24"><g stroke="#5aa7e8" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v18"></path><path d="M4.2 7.5l15.6 9"></path><path d="M19.8 7.5l-15.6 9"></path></g></svg>Frío</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;overflow:hidden;background:linear-gradient(180deg,#fff8e8,#ffeed3);padding:110px 0">
+    <img data-depth="-0.1" src="../assets/nimbo-water.png" alt="" style="position:absolute;right:4%;top:6%;width:clamp(120px,14vw,220px);z-index:3;pointer-events:none;filter:drop-shadow(0 24px 34px rgba(150,90,10,.28))">
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 5vw;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center" data-two>
+      <div data-reveal>
+        <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#a85f0e">Cualquier clima</div>
+        <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#3d2a0e;text-wrap:balance">Asegúrate de que se <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#f5a01a;color:#fff">hidraten</span></h2>
+        <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#8a5f1c">Ola de calor en su ciudad, noche fría en la tuya. Clouzy lee el pronóstico donde está cada uno y muestra su hora local, así el recordatorio llega cuando de verdad sirve.</p>
+      </div>
+      <div data-reveal style="position:relative;display:flex;justify-content:center;transition-delay:.1s">
+        <div data-depth="0.06" style="width:min(70%,380px);transform:rotate(3deg);filter:drop-shadow(-30px 40px 80px rgba(150,90,10,.3))">
+          <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a">
+            <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
+              <img src="../assets/shot-heat-es.png" alt="Calor extremo donde está Emma, botón Hidrátate" style="width:100%;display:block">
+              <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="position:relative;max-width:1240px;margin:0 auto;padding:110px 5vw;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center" data-two>
+    <div data-reveal style="order:2">
+      <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Respuestas</div>
+      <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Responde con una <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#1a7bff;color:#fff">selfie</span></h2>
+      <p style="margin:22px 0 0;max-width:460px;font:700 18px/1.5 Nunito,system-ui;color:#5c6b85">Sacan una foto, Clouzy la sella con su clima y te llega. Tú le das me gusta o le dejas un comentario. Un pequeño ida y vuelta que acorta la distancia.</p>
+    </div>
+    <div data-reveal style="order:1;position:relative;display:flex;justify-content:center">
+      <div style="width:min(70%,380px);filter:drop-shadow(0 50px 80px rgba(20,60,140,.26))">
+        <div style="padding:2.2%;border-radius:15%/7.4%;background:#0b0f1a">
+          <div style="position:relative;border-radius:13%/6.4%;overflow:hidden;background:#fff">
+            <img src="../assets/shot-alerts-es.png" alt="Avisos con respuestas en selfie" style="width:100%;display:block">
+            <div style="position:absolute;left:50%;top:3%;width:15%;height:2%;margin-left:-7.5%;border-radius:999px;background:#0b0f1a"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="widgets" style="position:relative;overflow:hidden;background:linear-gradient(180deg,#e9f2ff 0%,#cfe2fb 60%,#b3d2f6 100%);padding:110px 0 140px">
+    <div data-depth="0.14" style="position:absolute;right:-10%;bottom:-20%;width:50vw;height:50vw;border-radius:50%;background:rgba(255,255,255,.4)"></div>
+    <div style="position:relative;max-width:1240px;margin:0 auto;padding:0 5vw">
+      <div data-reveal style="max-width:680px;text-align:center;margin:0 auto">
+        <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Widgets</div>
+        <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">El cielo de todos en <span style="display:inline-block;padding:0 .26em .06em;border-radius:.24em;background:#1a7bff;color:#fff">tu</span> pantalla de inicio</h2>
+        <p style="margin:22px auto 0;max-width:520px;font:700 18px/1.5 Nunito,system-ui;color:#3d5c85">Una mirada a tu pantalla de inicio te dice cómo va su día. Tres tamaños, de una persona a todos.</p>
+      </div>
+      <div data-widget-stage style="position:relative;margin:70px auto 0;max-width:900px;height:clamp(420px,52vw,620px)">
+        <img data-reveal data-depth="-0.05" src="../assets/w-large-es.png" alt="Widget grande con todos" style="position:absolute;left:50%;top:0;width:min(62%,520px);margin-left:-31%;border-radius:8%;box-shadow:0 40px 90px rgba(10,50,120,.32)">
+        <img data-reveal data-depth="0.08" src="../assets/w-medium-es.png" alt="Widget mediano, Manda abrigo" style="position:absolute;left:-2%;bottom:6%;width:min(52%,440px);border-radius:9%/18%;box-shadow:0 34px 70px rgba(10,50,120,.34);transition-delay:.15s">
+        <img data-reveal data-depth="0.14" src="../assets/w-small-es.png" alt="Widget pequeño, Sofía" style="position:absolute;right:0;bottom:16%;width:min(26%,220px);border-radius:16%;box-shadow:0 34px 70px rgba(10,50,120,.34);transition-delay:.3s">
+        <div data-depth="-0.2" style="position:absolute;right:4%;top:-4%;width:min(22%,180px)"><img src="../assets/nimbo-coat.png" alt="" style="width:100%;display:block;animation:cz-float 8s ease-in-out infinite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" style="position:relative;padding:clamp(90px,11vw,150px) 5vw;background:#eef3ff">
+    <div data-reveal style="max-width:760px;margin:0 auto">
+      <div style="font:800 12px/1 Nunito,system-ui;letter-spacing:.2em;text-transform:uppercase;color:#1a7bff">Preguntas</div>
+      <h2 style="margin:16px 0 0;font:900 clamp(34px,4vw,56px)/1.05 Nunito,system-ui;letter-spacing:-.03em;color:#0e2748;text-wrap:balance">Todo lo que te puedes estar preguntando</h2>
+
+      <div style="margin-top:46px;display:flex;flex-direction:column;gap:16px">
+        <div style="padding:28px 30px;border-radius:26px;background:#fff;box-shadow:0 18px 44px rgba(20,60,140,.07)">
+          <h3 style="margin:0;font:900 20px/1.3 Nunito,system-ui;color:#0e2748">¿Qué es Clouzy?</h3>
+          <p style="margin:12px 0 0;font:700 17px/1.6 Nunito,system-ui;color:#5c6b85">Clouzy es una app gratuita para iPhone que te muestra el clima real donde están tu pareja, tu familia y tus amigos, y te deja mandarles un recordatorio para llevar paraguas, abrigarse o tomar agua antes de que el clima cambie.</p>
+        </div>
+        <div style="padding:28px 30px;border-radius:26px;background:#fff;box-shadow:0 18px 44px rgba(20,60,140,.07)">
+          <h3 style="margin:0;font:900 20px/1.3 Nunito,system-ui;color:#0e2748">¿Cómo me conecto con alguien en Clouzy?</h3>
+          <p style="margin:12px 0 0;font:700 17px/1.6 Nunito,system-ui;color:#5c6b85">Comparte tu código de invitación con la persona que quieras. Cuando acepta, los dos ven el clima y la hora local del otro y pueden mandarse recordatorios.</p>
+        </div>
+        <div style="padding:28px 30px;border-radius:26px;background:#fff;box-shadow:0 18px 44px rgba(20,60,140,.07)">
+          <h3 style="margin:0;font:900 20px/1.3 Nunito,system-ui;color:#0e2748">¿Clouzy es gratis?</h3>
+          <p style="margin:12px 0 0;font:700 17px/1.6 Nunito,system-ui;color:#5c6b85">Sí. Clouzy es gratis en iPhone. Inicias sesión con Apple, no hay anuncios ni cuentas que crear.</p>
+        </div>
+        <div style="padding:28px 30px;border-radius:26px;background:#fff;box-shadow:0 18px 44px rgba(20,60,140,.07)">
+          <h3 style="margin:0;font:900 20px/1.3 Nunito,system-ui;color:#0e2748">¿Clouzy comparte mi ubicación?</h3>
+          <p style="margin:12px 0 0;font:700 17px/1.6 Nunito,system-ui;color:#5c6b85">No. Clouzy solo usa tu ubicación para saber en qué ciudad estás y comparte el nombre de la ciudad con las personas que tú conectas. Nunca guarda ni comparte tus coordenadas exactas.</p>
+        </div>
+        <div style="padding:28px 30px;border-radius:26px;background:#fff;box-shadow:0 18px 44px rgba(20,60,140,.07)">
+          <h3 style="margin:0;font:900 20px/1.3 Nunito,system-ui;color:#0e2748">¿Clouzy tiene widgets?</h3>
+          <p style="margin:12px 0 0;font:700 17px/1.6 Nunito,system-ui;color:#5c6b85">Sí. Clouzy tiene tres tamaños de widget, desde una persona hasta todos los que sigues, para mirar cómo están sin abrir la app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download" style="position:relative;overflow:hidden;background:linear-gradient(180deg,#2f6fbe 0%,#1a4f96 100%);padding:130px 5vw 60px;text-align:center">
+    <div data-depth="0.1" style="position:absolute;left:10%;top:10%;width:30vw;height:12vw;border-radius:999px;background:rgba(255,255,255,.1)"></div>
+    <div data-depth="0.2" style="position:absolute;right:6%;top:40%;width:24vw;height:10vw;border-radius:999px;background:rgba(255,255,255,.08)"></div>
+    <div data-reveal style="position:relative;max-width:760px;margin:0 auto">
+      <img src="../assets/mascot.png" alt="" style="width:clamp(120px,14vw,190px);display:block;margin:0 auto;animation:cz-float 7s ease-in-out infinite;filter:drop-shadow(0 30px 40px rgba(0,20,60,.4))">
+      <h2 style="margin:30px 0 0;font:900 clamp(36px,4.6vw,64px)/1.03 Nunito,system-ui;letter-spacing:-.035em;color:#fff;text-wrap:balance">Alguien que quieres está bajo otro cielo.</h2>
+      <p style="margin:20px auto 0;max-width:480px;font:700 18px/1.5 Nunito,system-ui;color:rgba(255,255,255,.8)">Gratis en iPhone. Invita a una persona hoy y sé el primero en saber cuándo cambia su clima.</p>
+      <div style="margin-top:34px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:22px">
+      <a href="/get" style="display:inline-flex;align-items:center;gap:12px;padding:18px 28px;border-radius:999px;background:#fff;color:#0e2748;font:800 16px/1 Nunito,system-ui;box-shadow:0 20px 50px rgba(0,20,60,.35)" style-hover="background:#e8f0ff;color:#0e2748">
+        <svg width="16" height="18" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#0e2748"></path></svg>
+        Descargar en el App Store
+      </a>
+      <div data-qr-footer style="display:flex;align-items:center;gap:14px;padding:10px 18px 10px 10px;border-radius:22px;background:rgba(255,255,255,.96);box-shadow:0 20px 50px rgba(0,20,60,.35)">
+        <img src="../qr-get.svg" alt="Código QR para descargar Clouzy en el App Store" style="width:84px;height:84px;display:block;image-rendering:pixelated">
+        <div style="text-align:left;font:800 13px/1.3 Nunito,system-ui;color:#0e2748">Escanea con<br>tu iPhone</div>
+      </div>
+      </div>
+    </div>
+    <div style="position:relative;margin-top:110px;display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;max-width:1240px;margin-left:auto;margin-right:auto;padding-top:26px;border-top:1px solid rgba(255,255,255,.14);font:700 13px/1 Nunito,system-ui;color:rgba(255,255,255,.6)">
+      <span style="font:900 20px/1 Nunito,system-ui;color:#fff">clouzy</span>
+      <div style="display:flex;gap:26px">
+        <a href="../privacy" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">Privacidad</a>
+        <a href="../terms" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">Términos</a>
+        <a href="mailto:bauti@clouzy.app" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">Soporte</a>
+        <a href="../" hreflang="en" lang="en" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">English</a>
+      </div>
+      <span>© 2026 Clouzy</span>
+    </div>
+  </section>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  componentDidMount() {
+    const root = document;
+    // capture base transforms BEFORE the reveal offset is added
+    this.layers = [...root.querySelectorAll('[data-depth]')].map(el => ({
+      el, depth: parseFloat(el.dataset.depth), base: el.style.transform || ''
+    }));
+    this.reveals = [...root.querySelectorAll('[data-reveal]')];
+    this.reveals.forEach(el => {
+      const base = el.style.transform || '';
+      el.dataset.baseTransform = base;
+      el.style.opacity = '0';
+      el.style.transform = (base ? base + ' ' : '') + 'translateY(36px)';
+      el.style.transition = 'opacity .9s cubic-bezier(.2,.8,.2,1), transform .9s cubic-bezier(.2,.8,.2,1)';
+    });
+    this.io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        const el = e.target;
+        if (!e.isIntersecting) return;
+        el.style.opacity = '1';
+        el.style.transform = el.dataset.baseTransform || '';
+        this.io.unobserve(el);
+        // once revealed, only opacity keeps a transition so parallax tracks scroll 1:1
+        setTimeout(() => { el.style.transition = 'opacity .9s cubic-bezier(.2,.8,.2,1)'; if (this.onScroll) this.onScroll(); }, 950);
+      });
+    }, { threshold: 0.18 });
+    this.reveals.forEach(el => this.io.observe(el));
+    this.onScroll = () => {
+      const y = window.scrollY;
+      const vh = window.innerHeight;
+      for (const L of this.layers) {
+        const r = L.el.getBoundingClientRect();
+        if (r.bottom < -300 || r.top > vh + 300) continue;
+        const centre = r.top + r.height / 2 - vh / 2;
+        const shift = -centre * L.depth;
+        if (L.el.dataset.reveal !== undefined && L.el.style.opacity === '0') continue;
+        L.el.style.transform = `translate3d(0,${shift.toFixed(1)}px,0) ${L.base}`;
+      }
+    };
+    this.raf = null;
+    this.onScrollRaf = () => { if (this.raf) return; this.raf = requestAnimationFrame(() => { this.raf = null; this.onScroll(); }); };
+    window.addEventListener('scroll', this.onScrollRaf, { passive: true });
+    window.addEventListener('resize', this.onScrollRaf);
+    this.onScroll();
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScrollRaf);
+    window.removeEventListener('resize', this.onScrollRaf);
+    if (this.io) this.io.disconnect();
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

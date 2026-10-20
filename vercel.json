@@ -1,5 +1,7 @@
 {
+  "cleanUrls": true,
   "redirects": [
-    { "source": "/get", "destination": "https://apps.apple.com/us/app/clouzy/id6811368968", "permanent": false }
+    { "source": "/get", "destination": "https://apps.apple.com/us/app/clouzy/id6811368968", "permanent": false },
+    { "source": "/es", "destination": "/es/", "permanent": true }
   ]
 }

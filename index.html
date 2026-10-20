@@ -23,6 +23,10 @@
 <meta name="apple-mobile-web-app-title" content="Clouzy">
 <meta name="theme-color" content="#eef3ff">
 <link rel="canonical" href="https://clouzy.app/">
+<link rel="alternate" hreflang="en" href="https://clouzy.app/">
+<link rel="alternate" hreflang="es" href="https://clouzy.app/es/">
+<link rel="alternate" hreflang="x-default" href="https://clouzy.app/">
+<script>(function(){try{var s=localStorage.getItem('cz-lang');if(s==='en')return;if(s==='es'){location.replace('/es/');return;}var ls=navigator.languages||[navigator.language||''];for(var i=0;i<ls.length;i++){var l=(ls[i]||'').toLowerCase();if(l.indexOf('es')===0){location.replace('/es/');return;}if(l.indexOf('en')===0)return;}}catch(_){}})();</script>
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://clouzy.app/#org","name":"Clouzy","url":"https://clouzy.app/","logo":"https://clouzy.app/favicon-192.png","email":"bauti@clouzy.app","sameAs":["https://apps.apple.com/us/app/clouzy/id6811368968"]},{"@type":"WebSite","@id":"https://clouzy.app/#website","name":"Clouzy","alternateName":["Clouzy App"],"url":"https://clouzy.app/","publisher":{"@id":"https://clouzy.app/#org"},"inLanguage":"en"},{"@type":"SoftwareApplication","@id":"https://clouzy.app/#app","name":"Clouzy","applicationCategory":"LifestyleApplication","applicationSubCategory":"Weather","operatingSystem":"iOS 17.0 or later","url":"https://clouzy.app/","image":"https://clouzy.app/og-image.png","description":"Clouzy shows you the weather where your partner, family and friends are, and lets you send them an umbrella, coat or hydration reminder before it turns.","featureList":["See the real weather and local time of the people you connect with","Send umbrella, coat and hydration reminders in one tap","React to reminders without typing","Home Screen widgets in three sizes"],"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://clouzy.app/#org"}},{"@type":"FAQPage","@id":"https://clouzy.app/#faq","mainEntity":[{"@type":"Question","name":"What is Clouzy?","acceptedAnswer":{"@type":"Answer","text":"Clouzy is a free iPhone app that shows you the real weather where your partner, family and friends are, and lets you send them a reminder to bring an umbrella, wear a coat or drink water before the weather turns."}},{"@type":"Question","name":"How do I connect with someone on Clouzy?","acceptedAnswer":{"@type":"Answer","text":"Share your invite code with the person you want to connect with. Once they accept, you both see each other's weather and local time, and can send each other reminders."}},{"@type":"Question","name":"Is Clouzy free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Clouzy is free on iPhone. You sign in with Apple, there are no ads and no account to create."}},{"@type":"Question","name":"Does Clouzy share my location?","acceptedAnswer":{"@type":"Answer","text":"No. Clouzy only uses your location to work out which city you are in, and shares the city name with the friends you explicitly connect with. It never stores or shares your precise coordinates."}},{"@type":"Question","name":"Does Clouzy have Home Screen widgets?","acceptedAnswer":{"@type":"Answer","text":"Yes. Clouzy has three widget sizes, from a single person to everyone you follow, so you can check on them without opening the app."}}]}]}</script>
@@ -58,7 +62,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
   [data-qr]{display:none !important}
 }
 </style>
-<script>(function(){function arm(v){if(v.__cz)return;v.__cz=1;v.muted=true;v.defaultMuted=true;v.loop=true;v.autoplay=true;v.playsInline=true;v.setAttribute('muted','');v.setAttribute('loop','');v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.addEventListener('ended',function(){v.currentTime=0;v.play().catch(function(){});});var go=function(){var p=v.play();if(p&&p.catch)p.catch(function(){});};go();v.addEventListener('canplay',go,{once:true});}var n=0,t=setInterval(function(){var v=document.querySelector('video[data-promo]');if(v)arm(v);if(++n>300)clearInterval(t);},100);})();</script>
+<script>document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a){try{localStorage.setItem('cz-lang',a.getAttribute('hreflang'))}catch(_){}}});(function(){function arm(v){if(v.__cz)return;v.__cz=1;v.muted=true;v.defaultMuted=true;v.loop=true;v.autoplay=true;v.playsInline=true;v.setAttribute('muted','');v.setAttribute('loop','');v.setAttribute('playsinline','');v.setAttribute('webkit-playsinline','');v.addEventListener('ended',function(){v.currentTime=0;v.play().catch(function(){});});var go=function(){var p=v.play();if(p&&p.catch)p.catch(function(){});};go();v.addEventListener('canplay',go,{once:true});}var n=0,t=setInterval(function(){var v=document.querySelector('video[data-promo]');if(v)arm(v);if(++n>300)clearInterval(t);},100);})();</script>
 </helmet>
 
 <div style="position:relative;overflow:hidden">
@@ -69,6 +73,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
       <a data-nav-item href="#how" style="color:#3d5c85" style-hover="color:#1a7bff">How it works</a>
       <a data-nav-item href="#remind" style="color:#3d5c85" style-hover="color:#1a7bff">Reminders</a>
       <a data-nav-item href="#widgets" style="color:#3d5c85" style-hover="color:#1a7bff">Widgets</a>
+      <a data-lang href="/es/" hreflang="es" lang="es" title="Español" style="color:#3d5c85;letter-spacing:.06em" style-hover="color:#1a7bff">ES</a>
       <a href="/get" style="display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:999px;background:#0e2748;color:#fff" style-hover="background:#1a7bff;color:#fff">
         <svg width="12" height="14" viewBox="0 0 17 20"><path d="M13.6 10.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.5-.1-2.8.8-3.5.8-.7 0-1.8-.8-3-.8-1.5 0-2.9.9-3.7 2.3-1.6 2.7-.4 6.7 1.1 8.9.8 1.1 1.6 2.2 2.8 2.2 1.1 0 1.6-.7 3-.7 1.4 0 1.8.7 3 .7 1.2 0 2-1.1 2.8-2.2.5-.8.9-1.6 1.1-2.4-1.1-.5-2.2-1.7-2.2-3.5zM11.2 3.7c.6-.7 1-1.7.9-2.7-.9 0-1.9.6-2.5 1.3-.5.6-1 1.6-.9 2.6 1 .1 2-.5 2.5-1.2z" fill="#fff"></path></svg>
         Get the app
@@ -323,6 +328,7 @@ a{color:#1a7bff;text-decoration:none}a:hover{color:#0f5fd6}
         <a href="privacy.html" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">Privacy</a>
         <a href="terms.html" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">Terms</a>
         <a href="mailto:bauti@clouzy.app" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">Support</a>
+        <a href="/es/" hreflang="es" lang="es" style="color:rgba(255,255,255,.7)" style-hover="color:#fff">Español</a>
       </div>
       <span>© 2026 Clouzy</span>
     </div>
